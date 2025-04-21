@@ -7,13 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- 🔽 Khu vực chứa Fragment -->
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textView"
+        android:layout_width="183dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:text="Activity main"
+        android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="347dp"
+        android:layout_height="561dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabLayout"-->
+<!--        android:layout_width="407dp"-->
+<!--        android:layout_height="58dp"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
+<!--        app:layout_constraintVertical_bias="1.0">-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabItemHome"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Home" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabItemWeatherMap"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Weather Map" />-->
+
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
