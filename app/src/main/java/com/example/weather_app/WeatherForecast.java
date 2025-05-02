@@ -5,12 +5,16 @@ public class WeatherForecast {
     private String description;
     private String icon;
 
-    public WeatherForecast(String time, double temperature, String description) {
+
+    public WeatherForecast(String time, double temperature, String description, String icon) {
         this.time = time;
         this.temperature = temperature;
         this.description = description;
-//        this.icon;
+        this.icon = icon;
+    }
 
+    public String getIcon() {
+        return icon;
     }
 
 
